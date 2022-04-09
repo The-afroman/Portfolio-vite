@@ -1,6 +1,8 @@
 import React from 'react';
 /*
-    card 
+    props: 
+    name, githubUrl,
+    description, projectDate, 
 */
 class Card extends React.Component<{ name: string}, {count: number }> {
     state = {count: 0}
