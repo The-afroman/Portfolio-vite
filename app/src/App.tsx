@@ -7,23 +7,26 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Faris Hijazi
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/The-afroman"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Github
         </a>
-        <Card name="count" />
       </header>
-      <div>
-        <p>
-          content
-        </p>
+      <div className='Cards'>
+        <Card name="example1" description="This is an example project" imgsrc="temp.jpg"/>
+        <Card name="example2" description="This is an example project" imgsrc="temp.jpg"/>
+        <Card name="example2" description="This is an example project" imgsrc="temp.jpg"/>
+        <Card name="example3" description="This is an example project" imgsrc="temp.jpg"/>
+        <Card name="example3" description="This is an example project" imgsrc="temp.jpg"/>
+        <Card name="example3" description="This is an example project" imgsrc="temp.jpg"/>
       </div>
+      
     </div>
   );
 }
