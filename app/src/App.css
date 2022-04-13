@@ -1,30 +1,61 @@
+html {
+  background: #282a36;
+}
+
 .App {
   text-align: center;
+  color: #f8f8f2;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 5vh;
+  font-family: Hack, monospace;
+  background-color: #1E1F29;
+  min-height: 1vh;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; */
+  font-size: calc(10px + 1vmin);
+  color: #f8f8f2;
+  padding: 10px;
+}
+
+.links {
+  background-color: #373949;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  overflow: hidden;
+  top: 0;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
  .App-link {
-  color: #61dafb;
+  color: #bd93f9;
 }
 
 .Cards {
-  padding-top: 50px;
+  padding: 0 50px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-around;
+  font-size: calc(6px + 1vmin);
+  /* flex-direction: row;
   justify-content: space-evenly;
-  font-size: calc(6px + 2vmin);
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+}
+.Cards .col {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Resume {
+  padding: 0 100px;
+  border: none;
 }
 
 /* @keyframes App-logo-spin {
