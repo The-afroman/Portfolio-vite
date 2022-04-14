@@ -3,7 +3,7 @@ import './Card.css'
 /*
     props: 
     name, githubUrl,
-    description
+    description, image
 */
 class Card extends React.Component<{ name: string, description: string | null, imgsrc: string, link: string }> {
     render() {
