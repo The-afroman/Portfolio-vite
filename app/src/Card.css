@@ -1,8 +1,8 @@
 .Card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.4s;
-    border-radius: 3vmin;
+    transition: all 0.4s;
+    border-radius: 2vmin;
     display: block;
     /* flex-direction: column;
     align-items: center; */
@@ -10,12 +10,17 @@
     margin-left: auto;
     margin-right: auto;
     max-width: min-content;
-    background-color: #1E1F29;
+    background-color: #1c1c25;
   }
-
 /* On mouse-over, add a deeper shadow */
 .Card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+  transform: scale(1.2);
+}
+
+.Card:hover > .Card-container a h4 {
+  color: #bd93f9;
+  font-size: 30;
 }
 
 /* Add some padding inside the card container */
@@ -27,9 +32,15 @@
 .Card img {
     width: calc(30vw - 50px);
     height: auto;
-    border-radius: 3vmin 3vmin 0 0;
+    border-radius: 2vmin 2vmin 0 0;
     display: block;
 }
-h4 {
-  color: #bd93f9;
+
+.Card h4 {
+  color: #44475a;
+  transition: all 0.4s;
+}
+
+.Card a {
+  text-decoration: none;
 }

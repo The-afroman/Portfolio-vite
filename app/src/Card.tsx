@@ -7,14 +7,14 @@ import './Card.css'
 */
 class Card extends React.Component<{ name: string, description: string | null, imgsrc: string, link: string }> {
     render() {
-        return(
-            <div className="Card" onClick={() => window.open(this.props.link, "_blank")}>
-                <img src={this.props.imgsrc} alt="temp"/>
+        return (
+            <div className="Card">
+                <img src={this.props.imgsrc} alt="temp" />
                 <div className="Card-container">
-                    <h4><b>{this.props.name}</b></h4>
+                    <a target="_blank" href={this.props.link}><h4><b>{this.props.name}</b></h4></a>
                     <p>{this.props.description}</p>
                 </div>
-          </div> 
+            </div>
         );
     }
 }
