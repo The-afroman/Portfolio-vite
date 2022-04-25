@@ -39,9 +39,7 @@ class App extends React.Component {
         <h1>Projects :</h1>
         <div className='Cards'>
           <div className='col'>
-            <Card name="HTML proxy server" description="HTML 1.1 compatible proxy server in python written for a computer networking class" imgsrc={process.env.PUBLIC_URL+"/webproxy.png"} link="https://github.com/The-afroman/ecs152a-proxy-server" />
-
-
+            <Card name="Firesight (HackDavis 2022)" description="A web application to predict the probability of fire occurring in any US city using a machine learning model that was trained on past fire and weather data. Built with javascript, node, vue, python, flask, sklearn. Created for HackDavis 2022" imgsrc={process.env.PUBLIC_URL+"/firesight.png"} link="https://devpost.com/software/firesight" />
 
             <Card name="Fitness tracking website" description="activity tracking website with mobile and desktop views with Google Oauth user authentication and login using HTML, CSS, Javascript, SQlite and Node/express for server and backend. Created for web design class." imgsrc={process.env.PUBLIC_URL+"/fitness_tracker.png"} link="https://github.com/The-afroman/Fitness-Tracker" />
           </div>
@@ -56,11 +54,12 @@ class App extends React.Component {
           <div className='col'>
             <Card name="UC Davis interactive webapp" description="A web app to visualize UC Davis revenue and expenses with charts and animations using HTML, Javascript, CSS, React and D3. Created as the final project for a web design class" imgsrc={process.env.PUBLIC_URL+"/slices.png"} link="https://github.com/The-afroman/ecs162-final-proj" />
 
+            <Card name="HTML proxy server" description="HTML 1.1 compatible proxy server in python written for a computer networking class" imgsrc={process.env.PUBLIC_URL+"/webproxy.png"} link="https://github.com/The-afroman/ecs152a-proxy-server" />
           </div>
         </div>
         <h1>Resume :</h1>
         <div className="Resume">
-          <embed src={process.env.PUBLIC_URL+"/Resume.pdf"} width="800" height="2000" />
+          <iframe src="https://docs.google.com/document/d/e/2PACX-1vQ-OzVIfAt11sODCZpznuIzpa9sUS14nYsHN0IGtHHkGxv_HBmkiRag5yB5N737nhhsxxmNPQOM31u0/pub?embedded=true" width="800px" height="1400px" frameBorder="0"></iframe>
         </div>
 
       </div>
