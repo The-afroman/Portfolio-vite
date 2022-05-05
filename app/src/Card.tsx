@@ -11,7 +11,7 @@ class Card extends React.Component<{ name: string, description: string | null, i
             <div className="Card">
                 <img src={this.props.imgsrc} alt="temp" />
                 <div className="Card-container">
-                    <a target="_blank" href={this.props.link}><h4><b>{this.props.name}</b></h4></a>
+                    <a target="_blank" rel="noreferrer" href={this.props.link}><h4><b>{this.props.name}</b></h4></a>
                     <p>{this.props.description}</p>
                 </div>
             </div>

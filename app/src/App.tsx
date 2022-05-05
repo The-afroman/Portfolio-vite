@@ -59,7 +59,7 @@ class App extends React.Component {
         </div>
         <h1>Resume :</h1>
         <div className="Resume">
-          <iframe src="https://docs.google.com/document/d/e/2PACX-1vQ-OzVIfAt11sODCZpznuIzpa9sUS14nYsHN0IGtHHkGxv_HBmkiRag5yB5N737nhhsxxmNPQOM31u0/pub?embedded=true" width="800px" height="1400px" frameBorder="0"></iframe>
+          <iframe title="resume" src="https://docs.google.com/document/d/e/2PACX-1vQ-OzVIfAt11sODCZpznuIzpa9sUS14nYsHN0IGtHHkGxv_HBmkiRag5yB5N737nhhsxxmNPQOM31u0/pub?embedded=true" width="800px" height="1400px" frameBorder="0"></iframe>
         </div>
 
       </div>
