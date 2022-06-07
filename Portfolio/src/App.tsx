@@ -2,6 +2,10 @@ import React from 'react';
 import './App.css';
 import Card from './Card';
 
+function getImageUrl(name: String) {
+  return new URL(`./assets/${name}.png`, import.meta.url).href
+}
+
 class App extends React.Component {
   state = {
     data: null
@@ -39,22 +43,22 @@ class App extends React.Component {
         <h1>Projects :</h1>
         <div className='Cards'>
           <div className='col'>
-            <Card name="Firesight (HackDavis 2022)" description="A web application to predict the probability of fire occurring in any US city using a machine learning model that was trained on past fire and weather data. Built with javascript, node, vue, python, flask, sklearn. Created for HackDavis 2022" imgsrc={"/firesight.png"} link="https://devpost.com/software/firesight" />
+            <Card name="Firesight (HackDavis 2022)" description="A web application to predict the probability of fire occurring in any US city using a machine learning model that was trained on past fire and weather data. Built with javascript, node, vue, python, flask, sklearn. Created for HackDavis 2022" imgsrc={getImageUrl("firesight")} link="https://devpost.com/software/firesight" />
 
-            <Card name="Fitness tracking website" description="activity tracking website with mobile and desktop views with Google Oauth user authentication and login using HTML, CSS, Javascript, SQlite and Node/express for server and backend. Created for web design class." imgsrc={"/fitness_tracker.png"} link="https://github.com/The-afroman/Fitness-Tracker" />
+            <Card name="Fitness tracking website" description="activity tracking website with mobile and desktop views with Google Oauth user authentication and login using HTML, CSS, Javascript, SQlite and Node/express for server and backend. Created for web design class." imgsrc={getImageUrl("fitness_tracker")} link="https://github.com/The-afroman/Fitness-Tracker" />
           </div>
 
           <div className='col'>
-            <Card name="WebGL 3D viewer" description="WebGL 3D viewing program, uses custom written glsl shaders for phong and gouraud lighting models with bump mapping for normals. Ability to interactively change lighting position color and diffuse and specular attributes of individual point or directional lights. Custom scene graph data structure to represent the scene. Final project for computer graphics class." imgsrc={"/webgl.png"} link="https://github.com/The-afroman/computer-graphics-3D-viewer" />
+            <Card name="WebGL 3D viewer" description="WebGL 3D viewing program, uses custom written glsl shaders for phong and gouraud lighting models with bump mapping for normals. Ability to interactively change lighting position color and diffuse and specular attributes of individual point or directional lights. Custom scene graph data structure to represent the scene. Final project for computer graphics class." imgsrc={getImageUrl("webgl")} link="https://github.com/The-afroman/computer-graphics-3D-viewer" />
 
-            <Card name="Personal Site" description="portfolio showcase (this site) created with react, express, node, typescript" imgsrc={"/portfolio.png"} link="https://github.com/The-afroman/Portfolio" />
+            <Card name="Personal Site" description="portfolio showcase (this site) created with react, express, node, typescript" imgsrc={getImageUrl("portfolio")} link="https://github.com/The-afroman/Portfolio" />
 
           </div>
 
           <div className='col'>
-            <Card name="UC Davis interactive webapp" description="A web app to visualize UC Davis revenue and expenses with charts and animations using HTML, Javascript, CSS, React and D3. Created as the final project for a web design class" imgsrc={"/slices.png"} link="https://github.com/The-afroman/ecs162-final-proj" />
+            <Card name="UC Davis interactive webapp" description="A web app to visualize UC Davis revenue and expenses with charts and animations using HTML, Javascript, CSS, React and D3. Created as the final project for a web design class" imgsrc={getImageUrl("slices")} link="https://github.com/The-afroman/ecs162-final-proj" />
 
-            <Card name="HTML proxy server" description="HTML 1.1 compatible proxy server in python written for a computer networking class" imgsrc={"/webproxy.png"} link="https://github.com/The-afroman/ecs152a-proxy-server" />
+            <Card name="HTML proxy server" description="HTML 1.1 compatible proxy server in python written for a computer networking class" imgsrc={getImageUrl("webproxy")} link="https://github.com/The-afroman/ecs152a-proxy-server" />
           </div>
         </div>
         <h1>Resume :</h1>
