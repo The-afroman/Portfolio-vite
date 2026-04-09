@@ -30,7 +30,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <p>
-            Faris Hijazi - Student, Developer, Open Source enthusiast.
+            Faris Hijazi - QA Lead, Developer, Open Source enthusiast.
           </p>
         </header>
         <div className='links'>
